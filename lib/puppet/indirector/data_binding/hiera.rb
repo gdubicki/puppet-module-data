@@ -1,3 +1,4 @@
+if Puppet.version =~ /^3/
 require "hiera"
 require "hiera/config"
 require "hiera/scope"
@@ -72,4 +73,5 @@ class Puppet::DataBinding::Hiera < Puppet::Indirector::Code
   def hiera
     self.class.hiera
   end
+end
 end

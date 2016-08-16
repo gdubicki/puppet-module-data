@@ -1,3 +1,4 @@
+if Puppet.version =~ /^3/
 class Hiera
   module Backend
     class Module_data_backend
@@ -116,4 +117,5 @@ class Hiera
       end
     end
   end
+end
 end
